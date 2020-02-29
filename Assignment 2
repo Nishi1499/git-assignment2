@@ -1,1 +1,67 @@
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$ git rm index.txt                                                                                                                                                      fatal: pathspec 'index.txt' did not match any files
 
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$ rm "index.txt"
+
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$ git clone git@github.com:Nishi1499/git-assignment2.git
+Cloning into 'git-assignment2'...
+The authenticity of host 'github.com (13.234.210.38)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$ git clone https://github.com/opencv/opencv.git                                                                                                                        Cloning into 'opencv'...
+remote: Enumerating objects: 56, done.
+remote: Counting objects: 100% (56/56), done.
+remote: Compressing objects: 100% (52/52), done.
+error: RPC failed; curl 56 OpenSSL SSL_read: Connection was reset, errno 10054
+fatal: the remote end hung up unexpectedly
+fatal: early EOF
+fatal: index-pack failed
+
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$ git clone https://github.com/opencv/opencv.git                                                                                                                        Cloning into 'opencv'...
+remote: Enumerating objects: 56, done.
+remote: Counting objects: 100% (56/56), done.
+remote: Compressing objects: 100% (52/52), done.
+Receiving objects: 100% (269142/269142), 467.70 MiB | 1.20 MiB/s, done.6R                                                                                               
+Resolving deltas: 100% (187728/187728), done.
+Updating files: 100% (6133/6133), done.
+
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$ touch error.log
+
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$ touch gitignore
+
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$ touch .gitignore
+
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    index.txt.txt
+        deleted:    utils.txt.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        error.log
+        gitignore
+        opencv/
+        utils.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$
